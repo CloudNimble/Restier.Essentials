@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>CloudNimble.Restier.Essentials</id>
+    <version>$version$</version>
+    <title>Restier.Extensions</title>
+    <authors>Emanuele Filardo, Robert McLaws</authors>
+    <owners>CloudNimble</owners>
+    <description>A set of extensions to make working with Restier more awesome!</description>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/CloudNimble/Restier.Essentials</projectUrl>
+    <releaseNotes>https://github.com/CloudNimble/Restier.Essentials</releaseNotes>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright></copyright>
+    <dependencies>
+      <dependency id="EntityFramework" version="[6.1.3]" />
+      <dependency id="AdvancedREI.Restier.Providers.EntityFramework" version="1.0.0-Beta2a" />
+	    <dependency id="Microsoft.AspNet.WebApi.WebHost" version="5.2.3" />
+      <dependency id="System.Security.Claims" version="4.3.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\CloudNimble.Restier.Extensions.dll" target="lib\net462\" />
+    <file src="bin\Release\CloudNimble.Restier.Extensions.pdb" target="lib\net462\" />
+    <file src="bin\Release\CloudNimble.Restier.Extensions.xml" target="lib\net462\" />
+    <file src="**\*.cs" exclude="**\obj\**\*.*" target="src" />
+  </files>
+</package>
