@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Http;
 
-namespace CloudNimble.Restier.Essentials
+namespace CloudNimble.RestierEssentials
 {
 
     /// <summary>
