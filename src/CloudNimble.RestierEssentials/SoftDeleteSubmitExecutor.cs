@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace CloudNimble.Restier.Essentials
+namespace CloudNimble.RestierEssentials
 {
 
     /// <summary>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudNimble.Restier.Essentials", "CloudNimble.Restier.Essentials\CloudNimble.Restier.Essentials.csproj", "{233FFBD7-CACF-4348-A59E-546FEFDC641F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudNimble.RestierEssentials", "CloudNimble.RestierEssentials\CloudNimble.RestierEssentials.csproj", "{233FFBD7-CACF-4348-A59E-546FEFDC641F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

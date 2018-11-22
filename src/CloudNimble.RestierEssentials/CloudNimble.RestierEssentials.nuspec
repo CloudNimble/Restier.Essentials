@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0"?>
 <package>
   <metadata>
-    <id>CloudNimble.Restier.Essentials</id>
+    <id>RestierEssentials</id>
     <version>$version$</version>
-    <title>Restier.Extensions</title>
-    <authors>Emanuele Filardo, Robert McLaws</authors>
+    <title>RestierEssentials</title>
+    <authors>Robert McLaws, Emanuele Filardo</authors>
     <owners>CloudNimble</owners>
     <description>A set of extensions to make working with Restier more awesome!</description>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
@@ -20,9 +20,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\CloudNimble.Restier.Extensions.dll" target="lib\net462\" />
-    <file src="bin\Release\CloudNimble.Restier.Extensions.pdb" target="lib\net462\" />
-    <file src="bin\Release\CloudNimble.Restier.Extensions.xml" target="lib\net462\" />
+    <file src="bin\$configuration$\CloudNimble.RestierEssentials.dll" target="lib\net462\" />
+    <file src="bin\$configuration$\CloudNimble.RestierEssentials.pdb" target="lib\net462\" />
+    <file src="bin\$configuration$\CloudNimble.RestierEssentials.xml" target="lib\net462\" />
     <file src="**\*.cs" exclude="**\obj\**\*.*" target="src" />
   </files>
 </package>

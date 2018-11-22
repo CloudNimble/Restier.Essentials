@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CloudNimble.Restier.Essentials.Authorization
+namespace CloudNimble.RestierEssentials.Authorization
 {
 
     /// <summary>

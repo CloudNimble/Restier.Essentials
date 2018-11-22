@@ -1,4 +1,4 @@
-﻿namespace CloudNimble.Restier.Essentials
+﻿namespace CloudNimble.RestierEssentials
 {
 
     /// <summary>

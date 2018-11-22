@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CloudNimble.Restier.Essentials")]
+[assembly: AssemblyTitle("CloudNimble.RestierEssentials")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CloudNimble.Restier.Essentials")]
-[assembly: AssemblyCopyright("Copyright © 2018 Emanuele Filardo & Robert McLaws")]
+[assembly: AssemblyProduct("CloudNimble.RestierEssentials")]
+[assembly: AssemblyCopyright("Copyright © 2018 Robert McLaws & Emanuele Filardo")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

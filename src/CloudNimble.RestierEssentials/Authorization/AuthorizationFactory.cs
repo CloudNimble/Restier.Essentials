@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CloudNimble.Restier.Essentials.Authorization
+namespace CloudNimble.RestierEssentials.Authorization
 {
 
     /// <summary>

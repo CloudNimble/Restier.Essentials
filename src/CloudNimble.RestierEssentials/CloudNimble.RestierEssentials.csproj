@@ -7,8 +7,8 @@
     <ProjectGuid>{233FFBD7-CACF-4348-A59E-546FEFDC641F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CloudNimble.Restier.Essentials</RootNamespace>
-    <AssemblyName>CloudNimble.Restier.Essentials</AssemblyName>
+    <RootNamespace>CloudNimble.RestierEssentials</RootNamespace>
+    <AssemblyName>CloudNimble.RestierEssentials</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\CloudNimble.Restier.Essentials.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\CloudNimble.RestierEssentials.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\CloudNimble.Restier.Essentials.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\CloudNimble.RestierEssentials.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -96,7 +96,7 @@
     <Compile Include="SoftDeleteSubmitExecutor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CloudNimble.Restier.Essentials.nuspec" />
+    <None Include="CloudNimble.RestierEssentials.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
