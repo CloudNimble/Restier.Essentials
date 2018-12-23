@@ -79,7 +79,7 @@ namespace CloudNimble.RestierEssentials
             foreach (var entry in context.ChangeSet.Entries)
             {
                 // Are we deleting something?
-                if (entry is DataModificationItem item && item.DataModificationItemAction == DataModificationItemAction.Remove)
+                if (entry is DataModificationItem item && item.EntitySetOperation == RestierEntitySetOperations.Delete)
                 {
                     var entity = item.Resource;
                     var deletedProperty = entity.GetType().GetProperties().FirstOrDefault(p => p.Name == SoftDeletePropertyName);
