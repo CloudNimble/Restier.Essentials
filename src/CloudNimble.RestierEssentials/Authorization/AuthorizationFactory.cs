@@ -47,12 +47,14 @@ namespace CloudNimble.RestierEssentials.Authorization
         /// </example>
         public static AuthorizationEntry ForType<T>() where T : class
         {
-            if (!_entries.ContainsKey(typeof(T)))
+            //RWM: Allocating the Type once for speed, see https://twitter.com/robertmclaws/status/1123573880780668928.
+            var type = typeof(T);
+            if (!_entries.ContainsKey(type))
             {
-                Console.WriteLine($"RestierEssentials: The AuthorizationEntry for {typeof(T).Name} was not found. Adding new AuthorizationEntry with default permissions to speed up future lookups.");
-                _entries.Add(typeof(T), new AuthorizationEntry(typeof(T)));
+                Console.WriteLine($"RestierEssentials: The AuthorizationEntry for {type.Name} was not found. Adding new AuthorizationEntry with default permissions to speed up future lookups.");
+                _entries.Add(type, new AuthorizationEntry(type));
             }
-           return _entries[typeof(T)];
+           return _entries[type];
         }
 
         /// <summary>
