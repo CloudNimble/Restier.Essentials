@@ -25,7 +25,11 @@ namespace CloudNimble.RestierEssentials.Authorization
         /// Returns an <see cref="AuthorizationEntry"/> for a given <typeparamref name="T"/>.
         /// </summary>
         /// <typeparam name="T">The type to find the AuthorizationEntry for.</typeparam>
-        /// <returns>an <see cref="AuthorizationEntry"/> for a given <typeparamref name="T"/>.</returns>
+        /// <returns>
+        /// An <see cref="AuthorizationEntry"/> for a given <typeparamref name="T"/>. If the specific <typeparamref name="T"/> was not found
+        /// in the internal dictionary, a new <see cref="AuthorizationEntry"/> for <typeparamref name="T"/> will be returned with the default
+        /// (disallowed) permissions.
+        /// </returns>
         /// <example>
         /// <code>
         /// protected internal bool CanInsertReadOnlyEntry() => AuthorizationFactory.ForType<ReadOnlyEntry>().CanInsertAction();
@@ -43,7 +47,12 @@ namespace CloudNimble.RestierEssentials.Authorization
         /// </example>
         public static AuthorizationEntry ForType<T>() where T : class
         {
-            return _entries[typeof(T)];
+            if (_entries.ContainsKey(typeof(T)))
+            {
+                return _entries[typeof(T)];
+            }
+            Console.WriteLine($"RestierEssentials: The AuthorizationEntry for {typeof(T).Name} was not found. Returning default permissions.");
+            return new AuthorizationEntry(typeof(T));
         }
 
         /// <summary>
@@ -67,10 +76,7 @@ namespace CloudNimble.RestierEssentials.Authorization
         /// AuthorizationFactory.RegisterEntries(entries);
         /// </code>
         /// </example>
-        public static void RegisterEntries(List<AuthorizationEntry> entries)
-        {
-            entries.ForEach(c => _entries.Add(c.Type, c));
-        }
+        public static void RegisterEntries(List<AuthorizationEntry> entries) => entries.ForEach(c => _entries.Add(c.Type, c));
 
         #endregion
 
