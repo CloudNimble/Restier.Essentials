@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ben.Collections;
+using System;
 using System.Collections.Generic;
 
 namespace CloudNimble.RestierEssentials.Authorization
@@ -15,7 +16,7 @@ namespace CloudNimble.RestierEssentials.Authorization
         /// <summary>
         /// The backing collection that will store the <see cref="AuthorizationEntry">AuthorizationEntries</see>.
         /// </summary>
-        private static Dictionary<Type, AuthorizationEntry> _entries = new Dictionary<Type, AuthorizationEntry>();
+        private static readonly TypeDictionary<AuthorizationEntry> _entries = new TypeDictionary<AuthorizationEntry>();
 
         #endregion
 
