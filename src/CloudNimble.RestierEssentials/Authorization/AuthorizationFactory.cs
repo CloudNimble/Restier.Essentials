@@ -53,7 +53,7 @@ namespace CloudNimble.RestierEssentials.Authorization
             if (!_entries.ContainsKey(type))
             {
                 Console.WriteLine($"RestierEssentials: The AuthorizationEntry for {type.Name} was not found. Adding new AuthorizationEntry with default permissions to speed up future lookups.");
-                _entries.Add(type, new AuthorizationEntry(type));
+                _entries[type] = new AuthorizationEntry(type);
             }
            return _entries[type];
         }
