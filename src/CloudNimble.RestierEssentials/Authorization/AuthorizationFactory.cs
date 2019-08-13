@@ -79,7 +79,7 @@ namespace CloudNimble.RestierEssentials.Authorization
         /// AuthorizationFactory.RegisterEntries(entries);
         /// </code>
         /// </example>
-        public static void RegisterEntries(List<AuthorizationEntry> entries) => entries.ForEach(c => _entries.Add(c.Type, c));
+        public static void RegisterEntries(List<AuthorizationEntry> entries) => entries.ForEach(c => _entries[c.Type] = c);
 
         #endregion
 
